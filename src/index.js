@@ -60,7 +60,7 @@ input.addEventListener(
       const fetchCountriesVariable = await fetchCountries(trimInput);
       if (fetchCountriesVariable.length > 10) {
         Notiflix.Notify.info(
-          'Too many matches found. Please enter a more specific name.',
+          'Too many matches found. Please enter a more specific name',
           { width: '35vw', timeout: 2000 }
         );
         countryList.innerHTML = '';
